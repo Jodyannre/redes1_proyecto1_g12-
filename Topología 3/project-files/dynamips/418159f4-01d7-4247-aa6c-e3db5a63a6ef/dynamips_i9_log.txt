@@ -1,0 +1,97 @@
+Sep 14 15:36:22.205 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 14 15:36:22.206 HYPERVISOR: Started on IP = localhost, TCP port = 58489.
+Sep 14 15:36:22.474 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 14 15:36:22.474 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips 
+Sep 14 15:36:22.477 GENERAL: working_dir=C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips
+Sep 14 15:36:22.478 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\b7e56a2d-1183-48a4-be19-d134bbe04207 
+Sep 14 15:36:22.478 GENERAL: working_dir=C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\b7e56a2d-1183-48a4-be19-d134bbe04207
+Sep 14 15:36:22.478 HYPERVISOR: exec_cmd: vm create ESW8 8 c3725 
+Sep 14 15:36:22.479 VM: VM ESW8 created.
+Sep 14 15:36:22.480 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW8 5079 
+Sep 14 15:36:22.480 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW8 
+Sep 14 15:36:22.480 HYPERVISOR: exec_cmd: vm set_disk0 ESW8 1 
+Sep 14 15:36:22.480 HYPERVISOR: exec_cmd: vm set_exec_area ESW8 64 
+Sep 14 15:36:22.481 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 15:36:22.481 HYPERVISOR: exec_cmd: vm set_idle_pc ESW8 0x60264f28 
+Sep 14 15:36:22.482 HYPERVISOR: exec_cmd: vm set_ios ESW8 C:/Users/Joddie/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Sep 14 15:36:22.482 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW8 c208.400c.0000 
+Sep 14 15:36:22.482 HYPERVISOR: exec_cmd: vm set_nvram ESW8 256 
+Sep 14 15:36:22.482 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 15:36:22.483 HYPERVISOR: exec_cmd: vm slot_add_binding ESW8 1 0 NM-16ESW 
+Sep 14 15:36:24.502 HYPERVISOR: exec_cmd: nio create_udp udp-611f72c9-060d-417e-9ea2-662ee794e929 10022 127.0.0.1 10023 
+Sep 14 15:36:24.751 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW8 1 0 udp-611f72c9-060d-417e-9ea2-662ee794e929 
+Sep 14 15:36:24.752 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 15:36:24.840 HYPERVISOR: exec_cmd: nio create_udp udp-41797685-1454-4068-903b-907cefc03e41 10032 127.0.0.1 10033 
+Sep 14 15:36:24.842 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW8 1 2 udp-41797685-1454-4068-903b-907cefc03e41 
+Sep 14 15:36:24.843 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 15:36:25.066 HYPERVISOR: exec_cmd: nio create_udp udp-9d3d05a7-1cc3-4434-a559-ec3455aeb647 10046 127.0.0.1 10047 
+Sep 14 15:36:25.069 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW8 1 1 udp-9d3d05a7-1cc3-4434-a559-ec3455aeb647 
+Sep 14 15:36:25.069 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 15:36:25.203 HYPERVISOR: exec_cmd: nio create_udp udp-85cdc990-cfc1-4520-9274-724c94c18bce 10054 127.0.0.1 10055 
+Sep 14 15:36:25.205 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW8 1 3 udp-85cdc990-cfc1-4520-9274-724c94c18bce 
+Sep 14 15:36:25.206 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 15:36:42.761 HYPERVISOR: exec_cmd: vm set_ghost_status ESW8 2 
+Sep 14 15:36:42.761 HYPERVISOR: exec_cmd: vm set_ghost_file ESW8 C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 15:36:42.762 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 15:36:42.762 HYPERVISOR: exec_cmd: vm set_config ESW8 configs\i8_startup-config.cfg 
+Sep 14 15:36:42.763 HYPERVISOR: exec_cmd: vm start ESW8 
+Sep 14 15:37:13.084 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 15:37:13.091 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 15:56:15.685 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 15:56:15.685 HYPERVISOR: exec_cmd: vm stop ESW8 
+Sep 14 15:56:15.872 VM: VM ESW8 shutdown.
+Sep 14 15:56:15.873 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 15:56:49.070 HYPERVISOR: exec_cmd: vm set_ghost_status ESW8 2 
+Sep 14 15:56:49.071 HYPERVISOR: exec_cmd: vm set_ghost_file ESW8 C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 15:56:49.071 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 15:56:49.072 HYPERVISOR: exec_cmd: vm set_config ESW8 configs\i8_startup-config.cfg 
+Sep 14 15:56:49.072 HYPERVISOR: exec_cmd: vm start ESW8 
+Sep 14 15:57:19.394 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 15:57:19.400 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:05:52.542 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 16:05:52.543 HYPERVISOR: exec_cmd: vm stop ESW8 
+Sep 14 16:05:52.715 VM: VM ESW8 shutdown.
+Sep 14 16:05:52.716 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:06:04.072 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 16:06:04.073 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:08:04.684 HYPERVISOR: exec_cmd: vm set_ghost_status ESW8 2 
+Sep 14 16:08:04.684 HYPERVISOR: exec_cmd: vm set_ghost_file ESW8 C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 16:08:04.684 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 16:08:04.685 HYPERVISOR: exec_cmd: vm set_config ESW8 configs\i8_startup-config.cfg 
+Sep 14 16:08:04.685 HYPERVISOR: exec_cmd: vm start ESW8 
+Sep 14 16:08:35.029 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:08:35.036 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:10:31.976 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 16:10:31.976 HYPERVISOR: exec_cmd: vm stop ESW8 
+Sep 14 16:10:32.158 VM: VM ESW8 shutdown.
+Sep 14 16:10:32.159 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:10:51.949 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 16:10:51.949 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW8 1 3 
+Sep 14 16:10:51.950 HYPERVISOR: exec_cmd: nio delete udp-85cdc990-cfc1-4520-9274-724c94c18bce 
+Sep 14 16:10:58.969 HYPERVISOR: exec_cmd: nio create_udp udp-ca2237f7-150c-42c9-96b5-80022c86ca89 10054 127.0.0.1 10055 
+Sep 14 16:10:58.972 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW8 1 3 udp-ca2237f7-150c-42c9-96b5-80022c86ca89 
+Sep 14 16:10:58.972 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 16:11:07.040 HYPERVISOR: exec_cmd: vm set_ghost_status ESW8 2 
+Sep 14 16:11:07.041 HYPERVISOR: exec_cmd: vm set_ghost_file ESW8 C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 16:11:07.041 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 16:11:07.042 HYPERVISOR: exec_cmd: vm set_config ESW8 configs\i8_startup-config.cfg 
+Sep 14 16:11:07.042 HYPERVISOR: exec_cmd: vm start ESW8 
+Sep 14 16:11:37.328 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:11:37.335 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:41:51.982 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 16:41:51.983 HYPERVISOR: exec_cmd: vm stop ESW8 
+Sep 14 16:41:52.079 VM: VM ESW8 shutdown.
+Sep 14 16:41:52.080 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:43:49.326 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 16:43:49.327 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:44:36.371 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 16:44:36.372 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:46:22.806 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 16:46:22.807 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:46:24.868 HYPERVISOR: exec_cmd: vm get_status ESW8 
+Sep 14 16:46:24.869 HYPERVISOR: exec_cmd: vm extract_config ESW8 
+Sep 14 16:46:24.871 HYPERVISOR: exec_cmd: vm delete ESW8 
+Sep 14 16:46:24.871 VM: VM ESW8 destroyed.
+Sep 14 16:46:24.873 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 14 16:46:25.004 HYPERVISOR: Stopped.
+Sep 14 16:46:25.004 GENERAL: reset done.

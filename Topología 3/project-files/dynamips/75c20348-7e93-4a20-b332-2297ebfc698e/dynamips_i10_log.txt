@@ -1,0 +1,108 @@
+Sep 14 15:36:22.518 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 14 15:36:22.518 HYPERVISOR: Started on IP = localhost, TCP port = 58492.
+Sep 14 15:36:22.521 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 14 15:36:22.522 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips 
+Sep 14 15:36:22.522 GENERAL: working_dir=C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips
+Sep 14 15:36:22.522 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\418159f4-01d7-4247-aa6c-e3db5a63a6ef 
+Sep 14 15:36:22.522 GENERAL: working_dir=C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\418159f4-01d7-4247-aa6c-e3db5a63a6ef
+Sep 14 15:36:22.523 HYPERVISOR: exec_cmd: vm create ESW9 9 c3725 
+Sep 14 15:36:22.524 VM: VM ESW9 created.
+Sep 14 15:36:22.525 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW9 5053 
+Sep 14 15:36:22.525 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW9 
+Sep 14 15:36:22.525 HYPERVISOR: exec_cmd: vm set_disk0 ESW9 1 
+Sep 14 15:36:22.525 HYPERVISOR: exec_cmd: vm set_exec_area ESW9 64 
+Sep 14 15:36:22.526 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 15:36:22.526 HYPERVISOR: exec_cmd: vm set_idle_pc ESW9 0x60264f28 
+Sep 14 15:36:22.526 HYPERVISOR: exec_cmd: vm set_ios ESW9 C:/Users/Joddie/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Sep 14 15:36:22.527 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW9 c209.489c.0000 
+Sep 14 15:36:22.527 HYPERVISOR: exec_cmd: vm set_nvram ESW9 256 
+Sep 14 15:36:22.527 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 15:36:22.527 HYPERVISOR: exec_cmd: vm slot_add_binding ESW9 1 0 NM-16ESW 
+Sep 14 15:36:23.586 HYPERVISOR: exec_cmd: nio create_udp udp-907a2888-abe4-4027-a10c-8d31d46488cc 10002 127.0.0.1 10003 
+Sep 14 15:36:23.832 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW9 1 1 udp-907a2888-abe4-4027-a10c-8d31d46488cc 
+Sep 14 15:36:23.832 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 15:36:24.491 HYPERVISOR: exec_cmd: nio create_udp udp-59b39454-ed95-4501-93e0-1134618f611e 10020 127.0.0.1 10021 
+Sep 14 15:36:24.494 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW9 1 2 udp-59b39454-ed95-4501-93e0-1134618f611e 
+Sep 14 15:36:24.494 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 15:36:24.800 HYPERVISOR: exec_cmd: nio create_udp udp-b27015ee-41d7-4ce0-8319-badfc502c415 10028 127.0.0.1 10029 
+Sep 14 15:36:24.803 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW9 1 3 udp-b27015ee-41d7-4ce0-8319-badfc502c415 
+Sep 14 15:36:24.803 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 15:36:24.896 HYPERVISOR: exec_cmd: nio create_udp udp-56d98261-2d78-4d3a-bf20-66a4fe8a6546 10038 127.0.0.1 10039 
+Sep 14 15:36:24.899 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW9 1 4 udp-56d98261-2d78-4d3a-bf20-66a4fe8a6546 
+Sep 14 15:36:24.899 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 15:36:24.937 HYPERVISOR: exec_cmd: nio create_udp udp-e6c408f6-90fe-45a9-9246-34a64d04ea78 10042 127.0.0.1 10043 
+Sep 14 15:36:24.939 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW9 1 0 udp-e6c408f6-90fe-45a9-9246-34a64d04ea78 
+Sep 14 15:36:24.940 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 15:36:40.016 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Sep 14 15:36:40.018 VM: VM Ghost created.
+Sep 14 15:36:40.019 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Joddie/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Sep 14 15:36:40.019 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 14 15:36:40.019 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 15:36:40.020 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 14 15:36:40.020 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Sep 14 15:36:40.020 HYPERVISOR: exec_cmd: vm start Ghost 
+Sep 14 15:36:40.347 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 14 15:36:40.348 HYPERVISOR: exec_cmd: vm stop Ghost 
+Sep 14 15:36:40.476 VM: VM Ghost shutdown.
+Sep 14 15:36:40.477 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Sep 14 15:36:40.479 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Sep 14 15:36:40.479 VM: VM Ghost destroyed.
+Sep 14 15:36:40.487 HYPERVISOR: exec_cmd: vm set_ghost_status ESW9 2 
+Sep 14 15:36:40.487 HYPERVISOR: exec_cmd: vm set_ghost_file ESW9 C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 15:36:40.487 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 15:36:40.488 HYPERVISOR: exec_cmd: vm set_config ESW9 configs\i9_startup-config.cfg 
+Sep 14 15:36:40.488 HYPERVISOR: exec_cmd: vm start ESW9 
+Sep 14 15:37:10.772 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 15:37:10.779 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 15:56:15.804 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 15:56:15.805 HYPERVISOR: exec_cmd: vm stop ESW9 
+Sep 14 15:56:16.034 VM: VM ESW9 shutdown.
+Sep 14 15:56:16.034 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 15:56:51.233 HYPERVISOR: exec_cmd: vm set_ghost_status ESW9 2 
+Sep 14 15:56:51.234 HYPERVISOR: exec_cmd: vm set_ghost_file ESW9 C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 15:56:51.234 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 15:56:51.235 HYPERVISOR: exec_cmd: vm set_config ESW9 configs\i9_startup-config.cfg 
+Sep 14 15:56:51.235 HYPERVISOR: exec_cmd: vm start ESW9 
+Sep 14 15:57:21.567 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 15:57:21.574 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:05:52.692 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 16:05:52.692 HYPERVISOR: exec_cmd: vm stop ESW9 
+Sep 14 16:05:52.895 VM: VM ESW9 shutdown.
+Sep 14 16:05:52.896 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:06:04.071 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 16:06:04.073 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:08:11.548 HYPERVISOR: exec_cmd: vm set_ghost_status ESW9 2 
+Sep 14 16:08:11.549 HYPERVISOR: exec_cmd: vm set_ghost_file ESW9 C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 16:08:11.549 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 16:08:11.550 HYPERVISOR: exec_cmd: vm set_config ESW9 configs\i9_startup-config.cfg 
+Sep 14 16:08:11.550 HYPERVISOR: exec_cmd: vm start ESW9 
+Sep 14 16:08:41.865 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:08:41.871 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:10:32.165 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 16:10:32.165 HYPERVISOR: exec_cmd: vm stop ESW9 
+Sep 14 16:10:32.386 VM: VM ESW9 shutdown.
+Sep 14 16:10:32.387 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:11:04.887 HYPERVISOR: exec_cmd: vm set_ghost_status ESW9 2 
+Sep 14 16:11:04.888 HYPERVISOR: exec_cmd: vm set_ghost_file ESW9 C:\Users\Joddie\Documents\RepositoriosGitlab\redes1_proyecto1_g12-\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 16:11:04.888 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 16:11:04.889 HYPERVISOR: exec_cmd: vm set_config ESW9 configs\i9_startup-config.cfg 
+Sep 14 16:11:04.889 HYPERVISOR: exec_cmd: vm start ESW9 
+Sep 14 16:11:35.181 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:11:35.188 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:41:52.017 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 16:41:52.017 HYPERVISOR: exec_cmd: vm stop ESW9 
+Sep 14 16:41:52.189 VM: VM ESW9 shutdown.
+Sep 14 16:41:52.189 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:43:49.325 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 16:43:49.327 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:44:36.370 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 16:44:36.372 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:46:22.805 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 16:46:22.807 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:46:24.869 HYPERVISOR: exec_cmd: vm get_status ESW9 
+Sep 14 16:46:24.871 HYPERVISOR: exec_cmd: vm extract_config ESW9 
+Sep 14 16:46:24.874 HYPERVISOR: exec_cmd: vm delete ESW9 
+Sep 14 16:46:24.874 VM: VM ESW9 destroyed.
+Sep 14 16:46:24.875 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 14 16:46:25.004 HYPERVISOR: Stopped.
+Sep 14 16:46:25.004 GENERAL: reset done.

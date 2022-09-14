@@ -1,0 +1,2 @@
+set pcname Term_Ventas
+ip 192.168.124.30 192.168.124.1 24
