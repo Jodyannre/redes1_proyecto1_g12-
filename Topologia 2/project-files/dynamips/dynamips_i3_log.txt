@@ -1,0 +1,163 @@
+Sep 14 10:23:09.319 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 14 10:23:09.320 HYPERVISOR: Started on IP = localhost, TCP port = 63367.
+Sep 14 10:23:09.808 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 14 10:23:09.809 HYPERVISOR: exec_cmd: hypervisor working_dir D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips 
+Sep 14 10:23:09.809 GENERAL: working_dir=D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips
+Sep 14 10:23:09.809 HYPERVISOR: exec_cmd: hypervisor working_dir D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\7e7c22bb-463c-434f-a15b-6704d15d1c22 
+Sep 14 10:23:09.811 GENERAL: working_dir=D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\7e7c22bb-463c-434f-a15b-6704d15d1c22
+Sep 14 10:23:09.811 HYPERVISOR: exec_cmd: vm create ESW6 6 c3725 
+Sep 14 10:23:09.813 VM: VM ESW6 created.
+Sep 14 10:23:09.813 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW6 5061 
+Sep 14 10:23:09.814 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW6 
+Sep 14 10:23:09.814 HYPERVISOR: exec_cmd: vm set_disk0 ESW6 1 
+Sep 14 10:23:09.814 HYPERVISOR: exec_cmd: vm set_exec_area ESW6 64 
+Sep 14 10:23:09.815 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 10:23:09.815 HYPERVISOR: exec_cmd: vm set_idle_pc ESW6 0x60264f28 
+Sep 14 10:23:09.816 HYPERVISOR: exec_cmd: vm set_ios ESW6 C:/Users/edinf/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Sep 14 10:23:09.817 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW6 c206.2550.0000 
+Sep 14 10:23:09.817 HYPERVISOR: exec_cmd: vm set_nvram ESW6 256 
+Sep 14 10:23:09.817 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 10:23:09.818 HYPERVISOR: exec_cmd: vm slot_add_binding ESW6 1 0 NM-16ESW 
+Sep 14 10:23:12.994 HYPERVISOR: exec_cmd: nio create_udp udp-587144b5-3f25-4697-a0df-158a57d26e84 13014 127.0.0.1 13015 
+Sep 14 10:23:13.248 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW6 1 0 udp-587144b5-3f25-4697-a0df-158a57d26e84 
+Sep 14 10:23:13.249 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 10:23:13.605 HYPERVISOR: exec_cmd: nio create_udp udp-9ee2944f-13a1-4a67-9450-d5510dd3239f 13024 127.0.0.1 13025 
+Sep 14 10:23:13.608 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW6 1 2 udp-9ee2944f-13a1-4a67-9450-d5510dd3239f 
+Sep 14 10:23:13.608 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 10:23:13.663 HYPERVISOR: exec_cmd: nio create_udp udp-6f5a0b83-952a-485b-b55f-703707b2ab95 13030 127.0.0.1 13031 
+Sep 14 10:23:13.666 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW6 1 1 udp-6f5a0b83-952a-485b-b55f-703707b2ab95 
+Sep 14 10:23:13.666 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 10:23:13.733 HYPERVISOR: exec_cmd: nio create_udp udp-cc4dbdc3-9833-47b8-9746-a6c7934cdfc0 13036 127.0.0.1 13037 
+Sep 14 10:23:13.736 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW6 1 3 udp-cc4dbdc3-9833-47b8-9746-a6c7934cdfc0 
+Sep 14 10:23:13.736 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 10:26:40.197 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 10:26:40.198 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 10:27:13.933 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 10:27:13.933 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW6 1 3 
+Sep 14 10:27:13.934 HYPERVISOR: exec_cmd: nio delete udp-cc4dbdc3-9833-47b8-9746-a6c7934cdfc0 
+Sep 14 10:29:08.698 HYPERVISOR: exec_cmd: nio create_udp udp-2aba0141-b5f4-49ee-87cd-c36873ef5472 13036 127.0.0.1 13037 
+Sep 14 10:29:08.700 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW6 1 3 udp-2aba0141-b5f4-49ee-87cd-c36873ef5472 
+Sep 14 10:29:08.701 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 10:30:12.996 HYPERVISOR: exec_cmd: vm set_ghost_status ESW6 2 
+Sep 14 10:30:12.998 HYPERVISOR: exec_cmd: vm set_ghost_file ESW6 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 10:30:12.998 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 10:30:12.999 HYPERVISOR: exec_cmd: vm set_config ESW6 configs\i6_startup-config.cfg 
+Sep 14 10:30:13.000 HYPERVISOR: exec_cmd: vm start ESW6 
+Sep 14 10:30:43.410 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 10:30:43.423 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 10:32:41.728 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 10:32:41.729 HYPERVISOR: exec_cmd: vm stop ESW6 
+Sep 14 10:32:41.939 VM: VM ESW6 shutdown.
+Sep 14 10:32:41.940 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 10:32:53.828 HYPERVISOR: exec_cmd: vm set_ghost_status ESW6 2 
+Sep 14 10:32:53.830 HYPERVISOR: exec_cmd: vm set_ghost_file ESW6 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 10:32:53.830 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 10:32:53.831 HYPERVISOR: exec_cmd: vm set_config ESW6 configs\i6_startup-config.cfg 
+Sep 14 10:32:53.831 HYPERVISOR: exec_cmd: vm start ESW6 
+Sep 14 10:33:24.204 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 10:33:24.219 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 10:40:54.400 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 10:40:54.410 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 11:31:18.971 HYPERVISOR: exec_cmd: vm set_ios ESW6 C:/Users/edinf/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Sep 14 11:52:24.793 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 11:52:24.794 HYPERVISOR: exec_cmd: vm stop ESW6 
+Sep 14 11:52:25.012 VM: VM ESW6 shutdown.
+Sep 14 11:52:25.013 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 11:52:52.043 HYPERVISOR: exec_cmd: vm set_ghost_status ESW6 2 
+Sep 14 11:52:52.044 HYPERVISOR: exec_cmd: vm set_ghost_file ESW6 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 11:52:52.045 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 11:52:52.045 HYPERVISOR: exec_cmd: vm set_config ESW6 configs\i6_startup-config.cfg 
+Sep 14 11:52:52.046 HYPERVISOR: exec_cmd: vm start ESW6 
+Sep 14 11:53:22.410 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 11:53:22.425 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 12:02:52.687 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 12:02:52.701 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 12:30:49.456 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 12:30:49.456 HYPERVISOR: exec_cmd: vm stop ESW6 
+Sep 14 12:30:49.639 VM: VM ESW6 shutdown.
+Sep 14 12:30:49.640 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 12:31:22.931 HYPERVISOR: exec_cmd: vm set_ios ESW6 C:/Users/edinf/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Sep 14 12:31:26.688 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 12:31:26.688 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW6 1 0 
+Sep 14 12:31:26.690 HYPERVISOR: exec_cmd: nio delete udp-587144b5-3f25-4697-a0df-158a57d26e84 
+Sep 14 12:32:00.646 HYPERVISOR: exec_cmd: nio create_udp udp-b1c47262-14e7-4410-b590-90181a375b89 13008 127.0.0.1 13009 
+Sep 14 12:32:00.648 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW6 1 0 udp-b1c47262-14e7-4410-b590-90181a375b89 
+Sep 14 12:32:00.649 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 12:32:46.207 HYPERVISOR: exec_cmd: vm set_ghost_status ESW6 2 
+Sep 14 12:32:46.208 HYPERVISOR: exec_cmd: vm set_ghost_file ESW6 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 12:32:46.208 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 12:32:46.209 HYPERVISOR: exec_cmd: vm set_config ESW6 configs\i6_startup-config.cfg 
+Sep 14 12:32:46.210 HYPERVISOR: exec_cmd: vm start ESW6 
+Sep 14 12:33:16.507 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 12:33:16.515 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 13:05:37.927 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 13:05:37.929 HYPERVISOR: exec_cmd: vm stop ESW6 
+Sep 14 13:05:38.124 VM: VM ESW6 shutdown.
+Sep 14 13:05:38.125 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 13:06:13.932 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 13:06:13.933 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW6 1 3 
+Sep 14 13:06:13.934 HYPERVISOR: exec_cmd: nio delete udp-2aba0141-b5f4-49ee-87cd-c36873ef5472 
+Sep 14 13:06:20.033 HYPERVISOR: exec_cmd: nio create_udp udp-02d45114-d87f-4d0a-83df-990da9eec66e 13036 127.0.0.1 13037 
+Sep 14 13:06:20.036 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW6 1 3 udp-02d45114-d87f-4d0a-83df-990da9eec66e 
+Sep 14 13:06:20.037 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 13:06:25.499 HYPERVISOR: exec_cmd: vm set_ghost_status ESW6 2 
+Sep 14 13:06:25.500 HYPERVISOR: exec_cmd: vm set_ghost_file ESW6 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 13:06:25.500 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 13:06:25.501 HYPERVISOR: exec_cmd: vm set_config ESW6 configs\i6_startup-config.cfg 
+Sep 14 13:06:25.501 HYPERVISOR: exec_cmd: vm start ESW6 
+Sep 14 13:06:55.864 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 13:06:55.876 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 13:14:44.898 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 13:14:44.898 HYPERVISOR: exec_cmd: vm stop ESW6 
+Sep 14 13:14:45.093 VM: VM ESW6 shutdown.
+Sep 14 13:14:45.094 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 13:15:11.860 HYPERVISOR: exec_cmd: vm set_ghost_status ESW6 2 
+Sep 14 13:15:11.861 HYPERVISOR: exec_cmd: vm set_ghost_file ESW6 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 13:15:11.862 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 13:15:11.863 HYPERVISOR: exec_cmd: vm set_config ESW6 configs\i6_startup-config.cfg 
+Sep 14 13:15:11.863 HYPERVISOR: exec_cmd: vm start ESW6 
+Sep 14 13:15:42.220 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 13:15:42.232 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 14:21:46.026 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 14:21:46.026 HYPERVISOR: exec_cmd: vm stop ESW6 
+Sep 14 14:21:46.191 VM: VM ESW6 shutdown.
+Sep 14 14:21:46.192 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 15:34:10.650 HYPERVISOR: exec_cmd: vm set_ghost_status ESW6 2 
+Sep 14 15:34:10.652 HYPERVISOR: exec_cmd: vm set_ghost_file ESW6 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 15:34:10.653 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 15:34:10.660 HYPERVISOR: exec_cmd: vm set_config ESW6 configs\i6_startup-config.cfg 
+Sep 14 15:34:10.660 HYPERVISOR: exec_cmd: vm start ESW6 
+Sep 14 15:34:41.032 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 15:34:41.044 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 15:56:15.044 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 15:56:15.044 HYPERVISOR: exec_cmd: vm stop ESW6 
+Sep 14 15:56:15.245 VM: VM ESW6 shutdown.
+Sep 14 15:56:15.245 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 15:56:39.857 HYPERVISOR: exec_cmd: vm set_ghost_status ESW6 2 
+Sep 14 15:56:39.858 HYPERVISOR: exec_cmd: vm set_ghost_file ESW6 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 15:56:39.859 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 15:56:39.860 HYPERVISOR: exec_cmd: vm set_config ESW6 configs\i6_startup-config.cfg 
+Sep 14 15:56:39.860 HYPERVISOR: exec_cmd: vm start ESW6 
+Sep 14 15:57:10.216 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 15:57:10.233 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 16:05:44.986 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 16:05:44.987 HYPERVISOR: exec_cmd: vm stop ESW6 
+Sep 14 16:05:45.177 VM: VM ESW6 shutdown.
+Sep 14 16:05:45.178 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 16:05:53.414 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 16:05:53.414 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW6 1 3 
+Sep 14 16:05:53.416 HYPERVISOR: exec_cmd: nio delete udp-02d45114-d87f-4d0a-83df-990da9eec66e 
+Sep 14 16:06:21.303 HYPERVISOR: exec_cmd: nio create_udp udp-35412316-9655-4dcb-8031-6f9d2975182c 13036 127.0.0.1 13037 
+Sep 14 16:06:21.305 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW6 1 3 udp-35412316-9655-4dcb-8031-6f9d2975182c 
+Sep 14 16:06:21.306 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 16:06:35.249 HYPERVISOR: exec_cmd: vm set_ghost_status ESW6 2 
+Sep 14 16:06:35.250 HYPERVISOR: exec_cmd: vm set_ghost_file ESW6 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 16:06:35.251 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 16:06:35.252 HYPERVISOR: exec_cmd: vm set_config ESW6 configs\i6_startup-config.cfg 
+Sep 14 16:06:35.252 HYPERVISOR: exec_cmd: vm start ESW6 
+Sep 14 16:07:05.649 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 16:07:05.673 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Sep 14 16:42:28.091 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Sep 14 16:42:28.092 HYPERVISOR: exec_cmd: vm stop ESW6 
+Sep 14 16:42:28.283 VM: VM ESW6 shutdown.
+Sep 14 16:42:28.283 HYPERVISOR: exec_cmd: vm extract_config ESW6 

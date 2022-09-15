@@ -1,0 +1,131 @@
+Sep 14 10:23:08.764 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 14 10:23:08.765 HYPERVISOR: Started on IP = localhost, TCP port = 63364.
+Sep 14 10:23:09.253 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 14 10:23:09.253 HYPERVISOR: exec_cmd: hypervisor working_dir D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips 
+Sep 14 10:23:09.254 GENERAL: working_dir=D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips
+Sep 14 10:23:09.254 HYPERVISOR: exec_cmd: hypervisor working_dir D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\a88fb21c-ed9f-4981-bc24-3c399d828eda 
+Sep 14 10:23:09.255 GENERAL: working_dir=D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\a88fb21c-ed9f-4981-bc24-3c399d828eda
+Sep 14 10:23:09.255 HYPERVISOR: exec_cmd: vm create ESW5 5 c3725 
+Sep 14 10:23:09.257 VM: VM ESW5 created.
+Sep 14 10:23:09.258 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW5 5060 
+Sep 14 10:23:09.259 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW5 
+Sep 14 10:23:09.259 HYPERVISOR: exec_cmd: vm set_disk0 ESW5 1 
+Sep 14 10:23:09.260 HYPERVISOR: exec_cmd: vm set_exec_area ESW5 64 
+Sep 14 10:23:09.260 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 10:23:09.261 HYPERVISOR: exec_cmd: vm set_idle_pc ESW5 0x60264f28 
+Sep 14 10:23:09.262 HYPERVISOR: exec_cmd: vm set_ios ESW5 C:/Users/edinf/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Sep 14 10:23:09.263 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW5 c205.56e4.0000 
+Sep 14 10:23:09.263 HYPERVISOR: exec_cmd: vm set_nvram ESW5 256 
+Sep 14 10:23:09.264 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 10:23:09.264 HYPERVISOR: exec_cmd: vm slot_add_binding ESW5 1 0 NM-16ESW 
+Sep 14 10:23:13.294 HYPERVISOR: exec_cmd: nio create_udp udp-279f60cc-f820-4247-9b21-9b509027f5a4 13018 127.0.0.1 13019 
+Sep 14 10:23:13.545 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW5 1 1 udp-279f60cc-f820-4247-9b21-9b509027f5a4 
+Sep 14 10:23:13.545 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 10:23:13.675 HYPERVISOR: exec_cmd: nio create_udp udp-9f1a836b-4116-443e-a9d0-d9f1334704f6 13032 127.0.0.1 13033 
+Sep 14 10:23:13.677 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW5 1 0 udp-9f1a836b-4116-443e-a9d0-d9f1334704f6 
+Sep 14 10:23:13.677 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 10:26:40.197 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 10:26:40.198 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 10:30:12.999 HYPERVISOR: exec_cmd: vm set_ghost_status ESW5 2 
+Sep 14 10:30:12.999 HYPERVISOR: exec_cmd: vm set_ghost_file ESW5 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 10:30:13.000 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 10:30:13.001 HYPERVISOR: exec_cmd: vm set_config ESW5 configs\i5_startup-config.cfg 
+Sep 14 10:30:13.001 HYPERVISOR: exec_cmd: vm start ESW5 
+Sep 14 10:30:43.410 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 10:30:43.421 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 10:32:41.727 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 10:32:41.729 HYPERVISOR: exec_cmd: vm stop ESW5 
+Sep 14 10:32:41.875 VM: VM ESW5 shutdown.
+Sep 14 10:32:41.876 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 10:32:53.832 HYPERVISOR: exec_cmd: vm set_ghost_status ESW5 2 
+Sep 14 10:32:53.833 HYPERVISOR: exec_cmd: vm set_ghost_file ESW5 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 10:32:53.833 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 10:32:53.834 HYPERVISOR: exec_cmd: vm set_config ESW5 configs\i5_startup-config.cfg 
+Sep 14 10:32:53.834 HYPERVISOR: exec_cmd: vm start ESW5 
+Sep 14 10:33:24.204 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 10:33:24.221 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 11:31:19.017 HYPERVISOR: exec_cmd: vm set_ios ESW5 C:/Users/edinf/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Sep 14 11:52:24.794 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 11:52:24.794 HYPERVISOR: exec_cmd: vm stop ESW5 
+Sep 14 11:52:24.939 VM: VM ESW5 shutdown.
+Sep 14 11:52:24.940 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 11:52:52.038 HYPERVISOR: exec_cmd: vm set_ghost_status ESW5 2 
+Sep 14 11:52:52.039 HYPERVISOR: exec_cmd: vm set_ghost_file ESW5 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 11:52:52.040 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 11:52:52.040 HYPERVISOR: exec_cmd: vm set_config ESW5 configs\i5_startup-config.cfg 
+Sep 14 11:52:52.041 HYPERVISOR: exec_cmd: vm start ESW5 
+Sep 14 11:53:22.415 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 11:53:22.427 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 12:02:52.686 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 12:02:52.703 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 12:30:49.455 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 12:30:49.456 HYPERVISOR: exec_cmd: vm stop ESW5 
+Sep 14 12:30:49.579 VM: VM ESW5 shutdown.
+Sep 14 12:30:49.580 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 12:31:22.977 HYPERVISOR: exec_cmd: vm set_ios ESW5 C:/Users/edinf/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Sep 14 12:32:46.209 HYPERVISOR: exec_cmd: vm set_ghost_status ESW5 2 
+Sep 14 12:32:46.210 HYPERVISOR: exec_cmd: vm set_ghost_file ESW5 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 12:32:46.210 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 12:32:46.211 HYPERVISOR: exec_cmd: vm set_config ESW5 configs\i5_startup-config.cfg 
+Sep 14 12:32:46.211 HYPERVISOR: exec_cmd: vm start ESW5 
+Sep 14 12:33:16.598 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 12:33:16.605 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 13:05:37.928 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 13:05:37.929 HYPERVISOR: exec_cmd: vm stop ESW5 
+Sep 14 13:05:38.070 VM: VM ESW5 shutdown.
+Sep 14 13:05:38.071 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 13:06:25.502 HYPERVISOR: exec_cmd: vm set_ghost_status ESW5 2 
+Sep 14 13:06:25.503 HYPERVISOR: exec_cmd: vm set_ghost_file ESW5 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 13:06:25.504 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 13:06:25.505 HYPERVISOR: exec_cmd: vm set_config ESW5 configs\i5_startup-config.cfg 
+Sep 14 13:06:25.505 HYPERVISOR: exec_cmd: vm start ESW5 
+Sep 14 13:06:55.860 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 13:06:55.876 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 13:14:44.897 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 13:14:44.898 HYPERVISOR: exec_cmd: vm stop ESW5 
+Sep 14 13:14:45.034 VM: VM ESW5 shutdown.
+Sep 14 13:14:45.035 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 13:15:11.858 HYPERVISOR: exec_cmd: vm set_ghost_status ESW5 2 
+Sep 14 13:15:11.859 HYPERVISOR: exec_cmd: vm set_ghost_file ESW5 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 13:15:11.859 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 13:15:11.860 HYPERVISOR: exec_cmd: vm set_config ESW5 configs\i5_startup-config.cfg 
+Sep 14 13:15:11.862 HYPERVISOR: exec_cmd: vm start ESW5 
+Sep 14 13:15:42.220 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 13:15:42.232 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 14:21:46.026 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 14:21:46.026 HYPERVISOR: exec_cmd: vm stop ESW5 
+Sep 14 14:21:46.154 VM: VM ESW5 shutdown.
+Sep 14 14:21:46.155 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 15:34:10.653 HYPERVISOR: exec_cmd: vm set_ghost_status ESW5 2 
+Sep 14 15:34:10.660 HYPERVISOR: exec_cmd: vm set_ghost_file ESW5 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 15:34:10.661 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 15:34:10.661 HYPERVISOR: exec_cmd: vm set_config ESW5 configs\i5_startup-config.cfg 
+Sep 14 15:34:10.662 HYPERVISOR: exec_cmd: vm start ESW5 
+Sep 14 15:34:41.044 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 15:34:41.053 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 15:56:15.044 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 15:56:15.044 HYPERVISOR: exec_cmd: vm stop ESW5 
+Sep 14 15:56:15.158 VM: VM ESW5 shutdown.
+Sep 14 15:56:15.159 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 15:56:39.856 HYPERVISOR: exec_cmd: vm set_ghost_status ESW5 2 
+Sep 14 15:56:39.856 HYPERVISOR: exec_cmd: vm set_ghost_file ESW5 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 15:56:39.857 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 15:56:39.858 HYPERVISOR: exec_cmd: vm set_config ESW5 configs\i5_startup-config.cfg 
+Sep 14 15:56:39.858 HYPERVISOR: exec_cmd: vm start ESW5 
+Sep 14 15:57:10.217 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 15:57:10.231 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 16:05:44.986 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 16:05:44.987 HYPERVISOR: exec_cmd: vm stop ESW5 
+Sep 14 16:05:45.122 VM: VM ESW5 shutdown.
+Sep 14 16:05:45.123 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 16:06:35.251 HYPERVISOR: exec_cmd: vm set_ghost_status ESW5 2 
+Sep 14 16:06:35.252 HYPERVISOR: exec_cmd: vm set_ghost_file ESW5 D:\U\CLASES SEGUNDO SEMESTRE-2022\REDES\LAB\Proyecto1\redes1_proyecto1_g12-\Topologia 2\Proyecto1_G12\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Sep 14 16:06:35.252 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 16:06:35.253 HYPERVISOR: exec_cmd: vm set_config ESW5 configs\i5_startup-config.cfg 
+Sep 14 16:06:35.254 HYPERVISOR: exec_cmd: vm start ESW5 
+Sep 14 16:07:05.651 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 16:07:05.671 HYPERVISOR: exec_cmd: vm extract_config ESW5 
+Sep 14 16:42:28.092 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Sep 14 16:42:28.092 HYPERVISOR: exec_cmd: vm stop ESW5 
+Sep 14 16:42:28.220 VM: VM ESW5 shutdown.
+Sep 14 16:42:28.221 HYPERVISOR: exec_cmd: vm extract_config ESW5 
