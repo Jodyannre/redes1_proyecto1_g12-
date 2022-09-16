@@ -1,0 +1,142 @@
+Configurar VPCS
+
+#ip 192.168.122.20/24 192.168.122.1 **
+---------------------------
+//Configurar servidor (ESW4)
+conf t
+vtp domain GRUPO12
+vtp password grupo12
+vtp mode server
+vtp version 2
+vtp pruning
+end
+sh vtp status (con este comando se ve si la conf es correcta)
+(ahora modo truncal)
+#interface f1/0
+#switchport mode trunk
+#switchport trunk allowed vlan 1,10,20,30,40,1002-1005
+end
+show int trunk
+conf ter
+#interface f1/1
+#switchport mode trunk
+#switchport trunk allowed vlan 1,10,20,30,40,1002-1005
+end
+show int trunk
+//vlans
+vlan 10
+name RRHH
+vlan 20
+name Informatica
+vlan 30
+name Contabilidad
+vlan 40
+name Ventas
+//ver vlans
+sh vlan-sw
+//configuracion STP
+
+ESW3#conf t
+spanning-tree vlan 10 root primary
+show spanning-tree blockedports(ver q cables estan bloqueados xd)
+
+------------------------------------------
+configurar Router (ESW7)
+
+#configure terminal
+#vlan 20
+#name informatica
+
+-----------------------------------
+#interface f1/0
+#switchport mode access
+#switchport access vlan 20
+
+#verinfovlan: do sh vlan-switch
+---------------------------------
+
+#interface f1/1
+#switchport mode trunk
+#switchport trunk allowed vlan 1,20,1002-1005
+
+#interface f1/2
+#switchport mode trunk
+#switchport trunk allowed vlan 1,20,1002-1005
+
+#interface f1/3
+#switchport mode trunk
+#switchport trunk allowed vlan 1,20,1002-1005
+
+#verinfovlantrunk: do sh int trunk
+-----------------------------------
+Configurar vtp
+
+vtp domain GRUPO12
+vtp password grupo12
+vtp mode server || client
+vtp version 2
+vtp pruning
+
+#do sh vtp st
+----------------------------------
+configurar stp
+
+
+-------------------------
+write
+
+
+------------------------------------------------
+------------------------ESW5--------------------
+------------------------------------------------
+interface f1/0
+#switchport mode trunk
+#switchport trunk allowed vlan 1,20,1002-1005
+
+#verinfovlan: do sh vlan-switch
+---------------------------------
+
+#interface f1/1
+#switchport mode trunk
+#switchport trunk allowed vlan 1,20,1002-1005
+
+#verinfovlantrunk: do sh int trunk
+Configurar vtp
+
+vtp domain GRUPO12
+vtp password grupo12
+vtp mode server || client
+vtp version 2
+vtp pruning
+
+#do sh vtp st
+
+WRITE
+
+
+------------------------------------------------
+------------------------ESW6--------------------
+------------------------------------------------
+interface f1/0
+#switchport mode trunk
+#switchport trunk allowed vlan 1,20,1002-1005
+
+#verinfovlan: do sh vlan-switch
+
+#interface f1/2
+#switchport mode trunk
+#switchport trunk allowed vlan 1,20,1002-1005
+
+#interface f1/1
+#switchport mode trunk
+#switchport trunk allowed vlan 1,20,1002-1005
+
+vtp domain GRUPO12
+vtp password grupo12
+vtp mode server || client
+vtp version 2
+vtp pruning
+
+#do sh vtp st
+
+WRITE

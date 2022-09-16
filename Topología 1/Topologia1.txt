@@ -1,0 +1,77 @@
+COMANDOS:
+
+STP----------------------------------------------
+conf t
+vlan 10(numero)
+name admin(algo)
+do sh vlan-switch
+
+
+int f1/2  (puerto hacia vpc2)
+switchport mode access
+switchport access vlan 20
+
+
+int f1/1 (puerto hacia otro switch)
+switchport mode trunk
+switchport trunk allowed vlan 1,10,20,30,40,1002-1005
+
+
+
+VTP---------------------------------------------
+
+vtp domain R1	#ojo dominio
+vtp pass 123	#ojo password
+vtp mode server
+vtp pruning
+do sh vtp st (muestra la info de la vtp)
+
+-----------------------------------------------------------------------------
+
+CONFIGURACION:
+
+ - MODE ACCESS ENTRE SWITCH A VPC
+	switchport mode access
+  
+	- VLAN RRHH
+	  switchport access vlan 10
+    
+	- VLAN Informatica
+	  switchport access vlan 20
+    
+	- VLAN Contabilidad
+	  switchport access vlan 30
+    
+	- VLAN Ventas
+	  switchport access vlan 40
+
+ - MODE TRUNK SWITCH A SWITCH
+	switchport mode trunk
+	switchport trunk allowed vlan 1,10,20,30,40,1002-1005
+
+CONFIGURACION VPCS
+   - RRHH_1
+     ip 192.168.121.10/24 192.168.121.1
+   - RRHH_2
+     ip 192.168.121.20/24 192.168.121.1
+
+   - INFORMATICA_1
+     ip 192.168.122.10/24 192.168.122.1
+
+   - CONTA_1
+     ip 192.168.123.10/24 192.168.123.1
+   - CONTA_2
+     ip 192.168.123.20/24 192.168.123.1
+
+   - VENTAS_1
+     ip 192.168.124.10/24 192.168.124.1
+     
+CONFIGURACION VTP
+ vtp domain GRUPO12
+ vtp password grupo12
+ vtp mode client
+
+CONFIGURACION CLOUD
+ LOCAL PORT: 4001
+ REMOTE HOST: 10.8.0.2
+ REMOTE PORT: 4002
