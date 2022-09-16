@@ -1,0 +1,99 @@
+Configuración de IP's de VPC y VM
+
+-Contabilidad
+--Server_Conta1 = 	192.168.123.30
+--Term_Conta = 		192.168.123.40
+
+Ventas
+--Server_Ventas1 = 	192.168.124.20
+--Term_Ventas = 	192.168.124.30
+
+RRHH
+--Server_RRHH1 = 	192.168.121.40
+--Term_RRHH = 		192.168.121.30
+
+
+Informática
+Server_Informatica = 	192.168.122.30
+
+Comando:
+ip 192.168.12X.X0 255.255.255.0 192.168.12X.1
+
+
+Configuración de Switches
+
+ESW9, ESW10, ESW11 y ESW12
+
+General:
+
+Creación de VLAN
+conf t
+vlan #
+name nombre
+
+Vlans creadas:
+10 - RRHH
+20 - INformatica
+30 - Contabilidad
+40 - Ventas
+
+
+Configuración de VTP
+
+vtp domain GRUPO12
+vtp pass grupo12
+vtp mode client/server/transparent
+
+
+Configuración de interfaces
+
+-Para interfaces de acceso a dispositivos finales (VPCs/VMs)
+--switchport mode access
+--switchport access #nombreVlan
+
+-Para interfaces que conectan entre switches
+--switchport mode trunk
+--switchport trunk allowed vlan 1,10,20,30,40,1002-1005
+
+
+ESW8 (mode client)
+-f1/0 (access)
+-f1/1 (trunk)
+-f1/2 (trunk)
+-f1/3 (trunk)
+
+ESW9 (mode client)
+-f1/0 (access)
+-f1/1 (access)
+-f1/2 (trunk)
+-f1/3 (trunk)
+-f1/4 (trunk)
+
+ESW10 (mode client)
+-f1/0 (access)
+-f1/1 (access)
+-f1/2 (trunk)
+-f1/3 (trunk)
+
+ESW11 (mode transparent)
+-f1/0 (access)
+-f1/1 (trunk)
+-f1/2 (trunk)
+
+
+Configuración VPN
+Local Port: 4004
+Remote Host: 10.8.0.2
+Remote Port: 4003
+
+
+
+
+
+
+
+
+
+
+
+
